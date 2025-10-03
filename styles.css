@@ -26,7 +26,36 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.8em;
+  color: #5D6063;
+}
 
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a img {
+  width: 50px;
+}
+
+.about-me .description .socials {
+  display: flex;
+  & a {
+    margin: 0.3em;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
@@ -40,11 +69,22 @@
   body {
     background-color: #F5CF8E; /* Yellow */
   }
+
+  .project-container {
+    width: 40%;
+  }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   body {
     background-color: #B2D6FF; /* Blue */
+
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .project-container {
+    width: 28%;
   }
 }

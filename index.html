@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Homepage</title>
 </head>
 <body>
+
+  <main>
     <section class="about-me">
-
+      <div class="media-conatiner">
+        <img
+          srcset="
+            images/pexels-vanessa-garcia-6325937-500.jpg  500w,
+            images/pexels-vanessa-garcia-6325937-800.jpg  800w,
+            images/pexels-vanessa-garcia-6325937-1200.jpg 1200w"
+          sizes="(max-width: 400px) 100vw, (max-width: 960px) 50vw, 33vw"
+          src="images/pexels-vanessa-garcia-6325937-1200.jpg" 
+          alt="man pondering">
+        <h1>John Smith</h1>
+      </div>
+      <div class="description">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, 
+           laboriosam sed. Aspernatur delectus, fugit id ut libero qui? Nisi 
+           voluptatibus non iusto alias eum laboriosam saepe perspiciatis qui 
+           consequatur consectetur. Nihil quis quaerat omnis odio, impedit magnam
+           distinctio sed dolores praesentium, nam, incidunt earum odit fugiat
+           iste esse a libero beatae officiis vero optio quas.</p>
+        <div class="socials">
+          <a href="https://github.com/ARParizi">
+            <img src="./icons/github-original.svg" alt="github">
+          </a>
+          <a href="https://github.com/ARParizi">
+            <img src="./icons/linkedin-plain.svg" alt="linkedin">
+          </a>
+          <a href="https://github.com/ARParizi">
+            <img src="./icons/twitter-original.svg" alt="x">
+          </a>
+        </div>
+      </div>
     </section>
+
     <section class="projects">
-
     </section>
-    <footer>
 
-    </footer>
+  </main>
+  <footer>
+  </footer>
 </body>
 </html>
