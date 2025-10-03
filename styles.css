@@ -47,7 +47,7 @@ a img {
   width: 50px;
 }
 
-.about-me .description .socials {
+.socials {
   display: flex;
   & a {
     margin: 0.3em;
@@ -55,6 +55,24 @@ a img {
       transform: scale(1.2);
     }
   }
+}
+
+ul {
+  list-style: none;
+}
+
+.project .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h3 {
+  margin-left: 1em;
+  align-self: center;
+}
+
+p {
+  margin: 1em;;
 }
 
 /* Mobile Styles */
