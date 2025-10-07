@@ -116,8 +116,8 @@ a img {
 .projects ul {
   list-style: none;
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(278px, 1fr));
+  gap: 2em;
 }
 
 .projects h2 {
