@@ -175,14 +175,34 @@ section.contact-me h2 {
 }
 /*************************/
 
-/* Mobile Styles */
+/* Mobile Only Styles */
 @media only screen and (max-width: 642px) {
   footer picture img {
     width: 100%;
   }
 }
 
-/* Tablet Styles */
+
+/* Tablet and Desktop Styles */
+@media only screen and (min-width: 643px) {
+  .about-me .description {
+    background-color: white;
+    margin-left: 5em;
+    box-shadow: 0.2em 0.2em .5em 0 rgb(0 0 0 / 0.2);
+    padding: 1em;
+  }
+
+  .about-me .media-container {
+    margin: 1em;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Tablet Only Styles */
 @media only screen and (min-width: 643px) and (max-width: 960px) {
   h1 {
     font-size: 55px;
@@ -190,25 +210,8 @@ section.contact-me h2 {
     right: -250px;
   }
 
-  .about-me .description {
-    background-color: white;
-    margin-left: 5em;
-    box-shadow: 0.2em 0.2em .5em 0 rgb(0 0 0 / 0.2);
-    padding: 1em;
-  }
-
-  .about-me .media-container {
-    margin: 1em;
-  }
-
-
   .about-me .socials {
     display: none;
-  }
-
-  footer {
-    display: flex;
-    align-items: center;
   }
 
   footer picture img {
@@ -216,24 +219,10 @@ section.contact-me h2 {
   }
 }
 
-/* Desktop Styles */
+/* Desktop Only Styles */
 @media only screen and (min-width: 961px) {
-
   .about-me .description {
     margin-top: 2em;
-    background-color: white;
-    margin-left: 5em;
-    box-shadow: 0.2em 0.2em .5em 0 rgb(0 0 0 / 0.2);
-    padding: 1em;
-  }
-
-  .about-me .media-container {
-    margin: 1em;
-  }
-
-  footer {
-    display: flex;
-    align-items: center;
   }
 
   footer .photo {
