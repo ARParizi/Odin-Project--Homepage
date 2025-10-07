@@ -88,6 +88,7 @@ a img {
 .about-me .media-container img {
   box-shadow: 0.2em 0.2em .5em 0 rgb(0 0 0 / 0.2);;
 }
+
 .about-me .description {
   margin-top: 5em;
 }
@@ -195,10 +196,28 @@ section.contact-me h2 {
     right: -250px;
   }
 
+  .about-me .description {
+    margin-left: 5em;
+    box-shadow: 0.2em 0.2em .5em 0 rgb(0 0 0 / 0.2);
+    padding: 1em;
+  }
+
+  .about-me .media-container {
+    margin: 1em;
+  }
 
 
   .about-me .socials {
     display: none;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+  }
+
+  footer picture img {
+    width: 90%;
   }
 }
 
