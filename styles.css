@@ -37,6 +37,8 @@ body {
 /* General */
 section {
   padding: 1em;
+  max-width: 960px;
+  margin-inline: auto;
 }
 
 h1 {
@@ -88,7 +90,8 @@ a img {
 }
 
 .about-me .media-container img {
-  box-shadow: 0.2em 0.2em .5em 0 rgb(0 0 0 / 0.2);;
+  box-shadow: 0.2em 0.2em .5em 0 rgb(0 0 0 / 0.2);
+  max-width: 450px;
 }
 
 .about-me .description {
@@ -155,6 +158,8 @@ p {
 /* Section Conatct Me */
 footer {
   background-color: rgb(8, 145, 178);
+  max-width: 960px;
+  margin: auto;
   & * {
     color: #FFF;
   }
