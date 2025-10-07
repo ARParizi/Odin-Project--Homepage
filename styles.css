@@ -31,6 +31,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #5D6063;
+  background-color: white;
 }
 
 /* General */
@@ -78,6 +79,7 @@ a img {
 /* Section About Me */
 .about-me {
   overflow: hidden;
+  background: linear-gradient(167deg, rgb(8, 145, 178) 60%, rgb(0 0 0 / 0.2) 60%, hsl(0, 100%, 100%) 61%);
 }
 .about-me .media-container {
   position: relative;
@@ -175,10 +177,6 @@ section.contact-me h2 {
 
 /* Mobile Styles */
 @media only screen and (max-width: 642px) {
-  body {
-    background-color: #F09A9D; /* Red */
-  }
-
   footer picture img {
     width: 100%;
   }
@@ -186,10 +184,6 @@ section.contact-me h2 {
 
 /* Tablet Styles */
 @media only screen and (min-width: 643px) and (max-width: 960px) {
-  body {
-    background-color: #F5CF8E; /* Yellow */
-  }
-
   h1 {
     font-size: 55px;
     top: 20px;
@@ -197,6 +191,7 @@ section.contact-me h2 {
   }
 
   .about-me .description {
+    background-color: white;
     margin-left: 5em;
     box-shadow: 0.2em 0.2em .5em 0 rgb(0 0 0 / 0.2);
     padding: 1em;
@@ -223,10 +218,26 @@ section.contact-me h2 {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  body {
-    background-color: #B2D6FF; /* Blue */
 
-    width: 960px;
-    margin: 0 auto;
+  .about-me .description {
+    margin-top: 2em;
+    background-color: white;
+    margin-left: 5em;
+    box-shadow: 0.2em 0.2em .5em 0 rgb(0 0 0 / 0.2);
+    padding: 1em;
+  }
+
+  .about-me .media-container {
+    margin: 1em;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+  }
+
+  footer .photo {
+    width: 550px;
+    padding-right: 30px;
   }
 }
